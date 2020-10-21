@@ -8,12 +8,21 @@ import java.util.Date;
  * @date 2020/10/22 02:14
  */
 public class VirtualWalletEntity {
+    private Long Id;
     private BigDecimal balance;
     private BigDecimal amount;
     private Date createTime;
     private Long fromWalletId;
     private Long toWalletId;
     private Integer status;
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
+    }
 
     public BigDecimal getAmount() {
         return amount;
